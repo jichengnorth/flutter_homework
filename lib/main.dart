@@ -217,7 +217,7 @@ class PressScreen extends StatelessWidget {
                     context,
                     title: Text('Confirm'),
                     content:
-                        Text('Would you like to confirm to join this class?'),
+                        Text('Would you like to confirm to join '+classNumPressed+' and Seat'+i.toString()+' ?'),
                     textOK: Text('Yes'),
                     textCancel: Text('No'),
                   )) {
@@ -233,9 +233,9 @@ class PressScreen extends StatelessWidget {
                       textOK: Text('cancel'),
                       textCancel: Text(''),
                     )) {
-                      Navigator.pop(context);
+
                     }
-                    Navigator.pop(context);
+                    Navigator.of(context, rootNavigator: true).pop(context);
                   }
                   return print('pressedCancel');
                 },
@@ -278,12 +278,18 @@ class PressScreen extends StatelessWidget {
   }
 
   Future<void> updateUser(int i) {
+    print('fire uplod --------');
+
+
+
     CollectionReference db =
         FirebaseFirestore.instance.collection(classNumPressed);
     print(classNumPressed);
+    print('seat' + i.toString());
+
 
     return db
-        .doc('seat' + (i).toString())
+        .doc('seat' + i.toString())
         .update({'filled': true})
         .then((value) => print("User Updated"))
         .catchError((error) => print("Failed to update user: $error"));
