@@ -26,3 +26,14 @@
   Improvemeent:
   Login, Adding courses, BottomNavigationBar, list of courses reged
  
+
+
+Specs:
+
+1. 前端设计并实现一个课程预定系统（座位预约）
+
+2. 后端使用firebase CRUD 存储管理数据
+
+3. 前端使用flutter
+
+4.预约之后发送confirmation给用户
