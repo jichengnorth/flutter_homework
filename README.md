@@ -20,4 +20,9 @@
   4.no-Action alert dialog disapeared
   5.Yes-Database updates, Confiramation dialog out.
        6.close the Confiramation -back to main
+       
+       
+       
+  Improvemeent:
+  Login, Adding courses, BottomNavigationBar, list of courses reged
  
