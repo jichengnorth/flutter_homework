@@ -30,10 +30,10 @@
 
 Specs:
 
-1. 前端设计并实现一个课程预定系统（座位预约）
+1. Front end design. make a class reseveration app.(reserve a seat)
 
-2. 后端使用firebase CRUD 存储管理数据
+2. Back-end use firebase CRUD for data storage 
 
-3. 前端使用flutter
+3. front end use flutter
 
-4.预约之后发送confirmation给用户
+4. After registering a seat in the class successfully, send user a confirmation. 
